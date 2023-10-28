@@ -4,6 +4,7 @@ format.version = "1.1"
 [versions]
 edc = "0.3.2-SNAPSHOT"
 failsafe = "3.3.1"
+googleCloudBigquery = "2.31.1"
 googleCloudIamAdmin = "3.19.0"
 googleCloudIamCredentials = "2.24.0"
 googleCloudStorage = "2.26.0"
@@ -30,11 +31,13 @@ failsafe-core = { module = "dev.failsafe:failsafe", version.ref = "failsafe" }
 failsafe-okhttp = { module = "dev.failsafe:failsafe-okhttp", version.ref = "failsafe" }
 
 # Google dependencies
+googlecloud-bigquery = { module = "com.google.cloud:google-cloud-bigquery", version.ref = "googleCloudBigquery" }
 googlecloud-core = { module = "com.google.cloud:google-cloud-core", version.ref = "googleCloudCore"}
 googlecloud-iam-admin = { module = "com.google.cloud:google-iam-admin", version.ref = "googleCloudIamAdmin" }
 googlecloud-iam-credentials = { module = "com.google.cloud:google-cloud-iamcredentials", version.ref = "googleCloudIamCredentials" }
 googlecloud-secretmanager = { module = "com.google.cloud:google-cloud-secretmanager", version.ref = "googleCloudSecretManager"}
 googlecloud-storage = { module = "com.google.cloud:google-cloud-storage", version.ref = "googleCloudStorage" }
+
 
 [bundles]
 

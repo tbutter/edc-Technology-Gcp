@@ -45,4 +45,5 @@ include(":extensions:control-plane:provision:provision-gcs")
 
 // data plane extensions
 include(":extensions:data-plane:data-plane-google-storage")
+include(":extensions:data-plane:data-plane-google-bigquery")
 include(":version-catalog")
